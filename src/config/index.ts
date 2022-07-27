@@ -1,5 +1,5 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { Users } from 'src/users/entity/users.entity';
+import { User } from 'src/users/entity/users.entity';
 
 export default {
   type: 'postgres',
@@ -8,7 +8,7 @@ export default {
   username: 'imob',
   password: 'imob',
   database: 'imob',
-  entities: [Users],
+  entities: [User],
   synchronize: true,
   autoLoadEntities: true,
   logging: true,

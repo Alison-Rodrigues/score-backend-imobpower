@@ -8,12 +8,12 @@ import {
 import { v4 as uuidv4 } from 'uuid';
 
 @Entity()
-export class Users {
+export class User {
   @PrimaryColumn()
   id: string;
 
   @Column()
-  nome: string;
+  name: string;
 
   @Column()
   email: string;
@@ -21,10 +21,10 @@ export class Users {
   @Column()
   password: string;
 
-  @UpdateDateColumn()
+  @UpdateDateColumn({ name: 'update_at' })
   updatedAt: string;
 
-  @CreateDateColumn()
+  @CreateDateColumn({ name: 'created_at' })
   createdAt: string;
 
   constructor() {
