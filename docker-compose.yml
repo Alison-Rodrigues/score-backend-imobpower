@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  database:
+    image: postgres
+    container_name: database_backend_db
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=imob
+      - POSTGRES_PASSWORD=imob
+      - POSTGRES_DB=imob
