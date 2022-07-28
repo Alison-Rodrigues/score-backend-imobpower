@@ -21,6 +21,9 @@ export class User {
   @Column()
   password: string;
 
+  @Column()
+  salt: string;
+
   @UpdateDateColumn({ name: 'update_at' })
   updatedAt: string;
 
