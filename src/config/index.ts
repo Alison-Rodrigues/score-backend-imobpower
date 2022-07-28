@@ -1,5 +1,5 @@
 import { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { User } from 'src/users/entity/users.entity';
+import { User } from 'src/entities/users.entity';
 
 export default {
   type: 'postgres',
